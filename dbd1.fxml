@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Courses">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: fff200;">
+            <children>
+                <Label layoutX="54.0" layoutY="124.0" text="DBD">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Label layoutX="38.0" layoutY="200.0" text="TUTORIAL">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="400.0">
+            <children>
+                <Label layoutX="31.0" layoutY="56.0" text="Select which is not a programming language.">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            <ToggleButtonGroup layoutX="79.0" layoutY="117.0" prefHeight="28.0" prefWidth="210.0" selectionType="SINGLE">
+               <toggles>
+                      <RadioButton fx:id="d1r1" mnemonicParsing="false" prefHeight="18.0" prefWidth="63.0" text="C" />
+                      <RadioButton fx:id="d1r2" mnemonicParsing="false" prefHeight="18.0" prefWidth="62.0" text="C++" />
+                      <RadioButton fx:id="d1r3" mnemonicParsing="false" prefHeight="18.0" prefWidth="70.0" text="Bin" />
+                      <RadioButton fx:id="d1r4" mnemonicParsing="false" text="Java" />
+               </toggles>
+            </ToggleButtonGroup>
+                <Button fx:id="d1next" layoutX="236.0" layoutY="275.0" mnemonicParsing="false" onAction="#d2next" text="Next" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
